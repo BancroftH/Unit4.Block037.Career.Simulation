@@ -1,0 +1,32 @@
+{
+  "name": "unit4.block037.career.simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server/index.js",
+    "seed": "node server/db/seed.js",
+    "client:dev": "vite serve client",
+    "server:dev": "JWT=JWT node --watch server",
+    "server:dev:windows": "set JWT=JWT && node --watch server",
+    "build": "vite build client",
+    "server": "node server"
+  },
+  "prisma": {
+    "seed": "node server/db/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "faker": "^5.5.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prisma": "^5.12.1"
+  }
+}
